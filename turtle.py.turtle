@@ -1,0 +1,49 @@
+import turtle
+
+# Create turtle object
+t = turtle.Turtle()
+screen = turtle.Screen()
+screen.bgcolor("sky blue")
+t.speed(30)
+
+# Function to draw a circle with a given color
+def draw_circle(color, x, y, radius):
+    t.penup()
+    t.goto(x, y - radius)
+    t.pendown()
+    t.color(color)
+    t.begin_fill()
+    t.circle(radius)
+    t.end_fill()
+
+# Draw turtle body
+draw_circle("green", 0, -50, 50)
+
+# Draw turtle head
+draw_circle("green", 0, 50, 30)
+
+# Draw turtle legs
+draw_circle("green", -50, -20, 20)  # Left leg
+draw_circle("green", 50, -20, 20)   # Right leg
+draw_circle("green", -30, -80, 20)  # Back left leg
+draw_circle("green", 30, -80, 20)   # Back right leg
+
+# Draw turtle eyes
+draw_circle("yellow", -10, 80, 8)
+draw_circle("white", 10, 80, 8)
+
+# Draw turtle pupils
+draw_circle("black", -10, 85, 4)
+draw_circle("pink", 10, 85, 4)
+
+# Draw turtle mouth
+t.penup()
+t.goto(-10, 65)
+t.pendown()
+t.width(3)
+t.setheading(-60)
+t.circle(10, 120)  # Arc for a smiling mouth
+
+# Finish
+t.hideturtle()
+turtle.done()
