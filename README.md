@@ -1,4 +1,8 @@
 # 24CSEN2261
 Data structures and algorithms 
-## py.3d.cude.py
-snake[snake.py]
+
+## code files
+
+-[snake game](./snake.py)
+-[3D Cude Animation](./py.3d.cude.py)
+-[Array Operation](./array.py)
