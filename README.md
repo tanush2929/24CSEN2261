@@ -11,3 +11,4 @@ Data structures and algorithms
 [3D Cube Animation](./py.3d.cude.py)  
 [Ball Moving Animation](./py.ball_moving_animation.py)  
 [Snake Game](./snake.py)  
+[3D Cude Animation mouse control](./py.3d.cude_mouse_keyboard_control.py)
